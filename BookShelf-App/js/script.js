@@ -142,7 +142,7 @@ function makeBook(bookObject) {
 function addBook() {
     const bookTitle = document.getElementById('inputBookTitle').value;
     const bookAuthor = document.getElementById('inputBookAuthor').value;
-    const bookYear = Number(document.getElementById('inputBookYear').value);
+    const bookYear = document.getElementById('inputBookYear').value;
 
     const generatedID = generateId();
     const bookObject = generateBookObject(generatedID, bookTitle, bookAuthor, bookYear);
